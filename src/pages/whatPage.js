@@ -5,6 +5,7 @@ import Decor from "../components/decor/decor";
 import Cursor from "../components/cursor/cursor";
 import {gsap} from "gsap";
 
+
 const WhatPage = ({data}) => {
     useEffect(() => {
         const tl = gsap.timeline({paused: false});
