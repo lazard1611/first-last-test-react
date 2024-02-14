@@ -1,0 +1,55 @@
+@import '../../main';
+
+.section_ticker {
+	z-index: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	font-style: italic;
+	font-weight: 700;
+	font-size: 5.2rem;
+	line-height: 1.1;
+	text-transform: uppercase;
+	-webkit-text-stroke: 1px $black;
+	text-stroke: 1px $black;
+	color: transparent;
+	opacity: 0.1;
+
+	@include bp($point_0, min) {
+		transform: translate(-50%, -50%) rotate(-30deg);
+	}
+
+	@include bp($point_0 - 1, $point_2) {
+		transform: translate(-50%, -50%) rotate(-37deg);
+	}
+
+	@include bp($point_2 - 1) {
+		transform: translate(-50%, -50%) rotate(-53deg);
+		//font-size: 4.2rem;
+	}
+
+	@include bp($point_3 - 1) {
+		font-size: 2.8rem;
+	}
+}
+
+.section_ticker__list {
+	display: flex;
+	flex-wrap: nowrap;
+
+	li {
+		white-space: nowrap;
+	}
+}
+
+.section_ticker__list--top {
+
+	@include bp($point_0, min) {
+		padding-bottom: 1.4rem;
+	}
+
+	@include bp($point_0 - 1, $point_2) {
+		padding-bottom: 3.4rem;
+	}
+}

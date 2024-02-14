@@ -1,0 +1,105 @@
+@import '../../main';
+
+.header_nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 100%;
+	pointer-events: none;
+
+
+	&:after {
+		z-index: -1;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba($grayLight, 0.95);
+
+		filter: blur(3rem);
+
+		@include bp($point_3 - 1) {
+			content: '';
+		}
+	}
+
+	&:not(.body--open_menu_state &) {
+		@include bp($point_3 - 1) {
+			transform: translateX(100%);
+		}
+	}
+
+	@include bp($point_3, min) {
+
+	}
+
+	@include bp($point_3 - 1) {
+		max-width: 50vw;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: var(--height-header) 2rem;
+		transition: transform 0.3s ease;
+	}
+}
+
+.header_nav_list {
+	@include bp($point_3, min) {
+
+	}
+}
+
+.header_nav_item {
+	@include bp($point_3, min) {
+		position: absolute;
+		text-align: center;
+		pointer-events: none;
+	}
+
+	&:nth-child(1) {
+		@include bp($point_3, min) {
+			left: 1.9rem;
+			top: 0;
+			height: 100%;
+			width: 100vh;
+			transform: rotate(-90deg);
+		}
+
+		@include bp($point_2 - 1) {
+			left: 1rem;
+		}
+	}
+
+	&:nth-child(2) {
+		@include bp($point_3, min) {
+			right: 1.9rem;
+			top: 0;
+			height: 100%;
+			width: 100vh;
+			transform: rotate(90deg);
+		}
+
+		@include bp($point_2 - 1) {
+			right: 1rem;
+		}
+	}
+
+	&:nth-child(3) {
+		@include bp($point_3, min) {
+			bottom: 2rem;
+			width: 100%;
+			left: 0;
+		}
+
+		@include bp($point_2 - 1) {
+			bottom: 1rem;
+		}
+	}
+
+	&:not(:last-child) {
+		@include bp($point_3 - 1) {
+			margin-bottom: 3rem;
+		}
+	}
+}

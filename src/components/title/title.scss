@@ -1,0 +1,24 @@
+@import '../../main';
+
+.title {
+	margin: 0 auto;
+
+	text-transform: uppercase;
+	line-height: 1.1;
+	text-align: center;
+
+	@include bp($point_2, min) {
+		font-size: 8.2rem;
+		max-width: 102.3rem;
+	}
+
+	@include bp($point_2 - 1, $point_3) {
+		font-size: 5.8rem;
+		max-width: 60rem;
+	}
+
+	@include bp($point_3 - 1) {
+		font-size: 3.4rem;
+		max-width: 35rem;
+	}
+}
