@@ -1,6 +1,7 @@
 import React from "react";
 import './navigation.scss';
-import Link from '../link/link';
+
+import NavLink from '../link/link';
 
 const Navigation = ({links}) => {
 
@@ -9,7 +10,7 @@ const Navigation = ({links}) => {
 
         return (
             <li className="header_nav_item">
-                <Link url={url} label={label}/>
+                <NavLink url={url} label={label}/>
             </li>
         )
     })

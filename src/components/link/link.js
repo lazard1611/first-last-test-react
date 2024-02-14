@@ -1,7 +1,10 @@
 import './link.scss';
+import { Link } from 'react-router-dom';
 
-const Link = ({url, label}) => {
-    return <a href={url} className="header_nav_link">{label}</a>
+const NavLink = ({url, label}) => {
+    return (
+        <Link to={url} className="header_nav_link">{label}</Link>
+    )
 };
 
-export default Link;
+export default NavLink;

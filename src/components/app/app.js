@@ -1,42 +1,43 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import './app.scss';
 import Header from '../header/header';
-import Cursor from '../cursor/cursor';
-import Ticker from '../ticker/ticker';
-import Decor from '../decor/decor';
-import Title from '../title/title';
+import WherePage from '../../pages/wherePage';
+import WhatPage from '../../pages/whatPage';
+import WhoPage from '../../pages/whoPage';
+import HomePage from "../../pages/homePage";
 
 const App = () => {
   const data = {
     links: [
-      {label: 'where?', url: '#'},
-      {label: 'what?', url: '#'},
-      {label: 'who?', url: '#'},
+      {label: 'where?', url: '/where'},
+      {label: 'what?', url: '/what'},
+      {label: 'who?', url: '/who'},
     ],
     lgLinks: [
       {label: 'UK', url: '#'},
       {label: 'RU', url: '#'},
     ],
-    title: 'FULL-CYCLE EVENT AGENCY'
+    titleHome: 'FULL-CYCLE EVENT AGENCY',
+    titleWhoPage: 'Who?',
+    titleWhatPage: 'What?',
+    titleWherePage: 'Where?',
+    logoURL: '/'
   };
 
   return (
-    <div className="App">
-      <Header data ={data}/>
-
-      <div className="wrapper">
-        <div className="base">
-          <section className="section">
-            <div className="section_in">
-              <Title label={data.title}/>
-            </div>
-          </section>
-          <Decor/>
-          <Ticker/>
-          <Cursor/>
+      <Router>
+        <div className="App">
+          <Header data ={data}/>
+          <Routes>
+            <Route exact path="/" element={<HomePage data={data}/>} />
+            <Route path="/who" element={<WhoPage data={data}/>} />
+            <Route path="/what" element={<WhatPage data={data}/>} />
+            <Route path="/where" element={<WherePage data={data}/>} />
+          </Routes>
         </div>
-      </div>
-    </div>
+      </Router>
   );
 }
 
