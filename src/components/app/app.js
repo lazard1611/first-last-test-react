@@ -14,18 +14,15 @@ const App = () => {
       <Router>
         <div className="App">
           <Header data ={data}/>
-            <HomePage data={data}/>
-          {/*<Routes>*/}
-          {/*  <Route exact path="/" element={<HomePage data={data}/>} />*/}
-          {/*  <Route path="/who" element={<WhoPage data={data}/>} />*/}
-          {/*  <Route path="/what" element={<WhatPage data={data}/>} />*/}
-          {/*  <Route path="/where" element={<WherePage data={data}/>} />*/}
-          {/*</Routes>*/}
+          <Routes>
+            <Route exact path="/" element={<HomePage data={data}/>} />
+            <Route path="/who" element={<WhoPage data={data}/>} />
+            <Route path="/what" element={<WhatPage data={data}/>} />
+            <Route path="/where" element={<WherePage data={data}/>} />
+          </Routes>
         </div>
       </Router>
   );
 }
-
-
 
 export default App;
