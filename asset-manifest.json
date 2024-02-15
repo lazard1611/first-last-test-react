@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/first-last-test-react/static/css/main.35699e44.css",
+    "main.js": "/first-last-test-react/static/js/main.dbb7e521.js",
+    "static/media/GrtskGiga-Medium.woff": "/first-last-test-react/static/media/GrtskGiga-Medium.1ed0a3d7d85e6ec1fedb.woff",
+    "static/media/GrtskGiga-Semibold.woff": "/first-last-test-react/static/media/GrtskGiga-Semibold.f81271a7e024bd1d21f2.woff",
+    "static/media/GrtskGiga-Bold.woff": "/first-last-test-react/static/media/GrtskGiga-Bold.b9695b343daa68689f32.woff",
+    "static/media/GrtskGiga-Regular.woff": "/first-last-test-react/static/media/GrtskGiga-Regular.f53bc3f30d78c4f042d5.woff",
+    "static/media/GrtskGiga-Medium.woff2": "/first-last-test-react/static/media/GrtskGiga-Medium.e3f0183e811bd1699271.woff2",
+    "static/media/GrtskGiga-Semibold.woff2": "/first-last-test-react/static/media/GrtskGiga-Semibold.f975f228e97795e1cb88.woff2",
+    "static/media/GrtskGiga-Bold.woff2": "/first-last-test-react/static/media/GrtskGiga-Bold.3199e30e6f53c560a254.woff2",
+    "static/media/GrtskGiga-Regular.woff2": "/first-last-test-react/static/media/GrtskGiga-Regular.6b7f9e2d323b0075c04d.woff2",
+    "index.html": "/first-last-test-react/index.html",
+    "main.35699e44.css.map": "/first-last-test-react/static/css/main.35699e44.css.map",
+    "main.dbb7e521.js.map": "/first-last-test-react/static/js/main.dbb7e521.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35699e44.css",
+    "static/js/main.dbb7e521.js"
+  ]
+}
