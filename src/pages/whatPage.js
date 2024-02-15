@@ -7,22 +7,26 @@ import {gsap} from "gsap";
 
 
 const WhatPage = ({data}) => {
-    useEffect(() => {
-        const tl = gsap.timeline({paused: false});
-        tl
-            .to(".animate", {
-                duration: 0.8,
-                xPercent: 100,
-                ease: "power2.out",
-            })
-            .set(".animate", {}, "+=0.4")
-            .to(".animate", {
-                duration: 0.8,
-                xPercent: 210,
-                ease: "power2.out",
-            })
-
-    }, []);
+    // useEffect(() => {
+    //     const tl = gsap.timeline({paused: false});
+    //     tl
+    //         .fromTo(".animate",
+    //             {
+    //                 clipPath: 'polygon(0% 0%, 57% 0%, 75% 100%, 0% 100%)',
+    //             },{
+    //             duration: 0.8,
+    //             xPercent: 100,
+    //             ease: "power2.out",
+    //             clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+    //         })
+    //         .set(".animate", {}, "+=0.4")
+    //         .to(".animate", {
+    //             duration: 0.8,
+    //             xPercent: 210,
+    //             ease: "power2.out",
+    //         })
+    //
+    // }, []);
 
     return (
         <div className="wrapper">

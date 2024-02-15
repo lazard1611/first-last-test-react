@@ -23,8 +23,11 @@
 	margin-left: -5.5rem;
 	margin-top: -5.5rem;
 	color: $white;
+	opacity: 0;
+	transition: opacity 0.3s ease;
 
 	.cursor.hover_state & {
+		opacity: 1;
 		animation: rotateText 10s linear infinite;
 	}
 }
