@@ -36,3 +36,18 @@
 		}
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	.header_nav_link {
+		color: $grayDark;
+
+		&:after {
+			background-color: $white;
+		}
+
+		&:focus,
+		&:hover {
+			color: $white;
+		}
+	}
+}
