@@ -1,23 +1,5 @@
 @import '../../main';
 
-.fade-enter {
-	opacity: 0;
-	transform: scale(0.9);
-}
-.fade-enter-active {
-	opacity: 1;
-	transform: translateX(0);
-	transition: opacity 800ms, transform 800ms;
-}
-.fade-exit {
-	opacity: 1;
-}
-.fade-exit-active {
-	opacity: 0;
-	transform: scale(0.9);
-	transition: opacity 800ms, transform 800ms;
-}
-
 .animate {
 	z-index: 100;
 	position: absolute;
@@ -27,4 +9,8 @@
 	filter: blur(0.4rem);
 	pointer-events: none;
 	transform: translateX(-100%);
+}
+
+.animate_state {
+	opacity: 0;
 }
