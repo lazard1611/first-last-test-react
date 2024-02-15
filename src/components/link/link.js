@@ -1,9 +1,13 @@
 import './link.scss';
 import { Link } from 'react-router-dom';
 
-const NavLink = ({url, label}) => {
+const NavLink = ({url, label, onClick}) => {
+    const handleClick = () => {
+        onClick();
+    };
+
     return (
-        <Link to={url} className="header_nav_link">{label}</Link>
+        <Link to={url} onClick={handleClick} className="header_nav_link">{label}</Link>
         // <a href={url} className="header_nav_link">{label}</a>
     )
 };

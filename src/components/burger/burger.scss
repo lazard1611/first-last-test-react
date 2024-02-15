@@ -2,17 +2,20 @@
 
 .burger {
 	$burgerHeight: 1rem;
-
-	position: relative;
-	z-index: 5;
-
-	width: 2.2rem;
-	height: $burgerHeight;
+	padding: 1rem;
 
 	cursor: pointer;
 
-	&::before,
-	&::after {
+	span {
+		z-index: 5;
+		position: relative;
+		display: block;
+		width: 2.2rem;
+		height: $burgerHeight;
+	}
+
+	span::before,
+	span::after {
 		position: absolute;
 		left: 0;
 		top: 50%;
@@ -26,26 +29,22 @@
 		background-color: $black;
 	}
 
-	&::before {
+	span::before {
 		content: "";
 		transform: translateY(calc(#{$burgerHeight} / 2 * -1));
 	}
 
-	&::after {
+	span::after {
 		content: "";
 		transform: translateY(calc(#{$burgerHeight} / 2));
 	}
 
 	.body--open_menu_state & {
-		span {
-			transform: scale(0);
-		}
-
-		&::before {
+		span::before {
 			transform: rotate(-45deg);
 		}
 
-		&::after {
+		span::after {
 			transform: rotate(45deg);
 		}
 	}

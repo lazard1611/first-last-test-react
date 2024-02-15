@@ -16,7 +16,7 @@
 		height: 100%;
 		background-color: rgba($grayLight, 0.95);
 
-		filter: blur(3rem);
+		filter: blur(30px);
 
 		@include bp($point_3 - 1) {
 			content: '';

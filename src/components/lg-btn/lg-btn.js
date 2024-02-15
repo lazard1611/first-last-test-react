@@ -1,19 +1,20 @@
-import React, {useEffect} from "react";
-import { gsap } from "gsap";
 import './lg-btn.scss';
+import React, { useState, useEffect } from 'react';
+import gsap from 'gsap';
 
-const Lang = ({lgLinks}) => {
+const Lang = ({ lgLinks }) => {
+    const [isClick, setIsClick] = useState(false);
 
     useEffect(() => {
         const $lg = document.querySelector('.header_lg');
         if (!$lg) return;
 
-        let isClick = false;
-        let timeline = gsap.timeline({
+        const timeline = gsap.timeline({
             paused: true
         });
 
-        timeline.fromTo('.header_lg__item',
+        timeline.fromTo(
+            '.header_lg__item',
             {
                 x: 20,
                 opacity: 0
@@ -22,18 +23,17 @@ const Lang = ({lgLinks}) => {
                 x: 0,
                 opacity: 1,
                 stagger: 0.3,
-                duration: 0.5,
+                duration: 0.5
             }
         );
 
         const handleClick = () => {
             if (!isClick) {
                 timeline.play();
-                isClick = true;
             } else {
                 timeline.reverse();
-                isClick = false;
             }
+            setIsClick(!isClick);
         };
 
         $lg.addEventListener('click', handleClick);
@@ -43,32 +43,33 @@ const Lang = ({lgLinks}) => {
         });
 
         $lg.addEventListener('mouseout', () => {
-            timeline.reverse();
+            if (!isClick) {
+                timeline.reverse();
+            }
         });
 
         return () => {
             $lg.removeEventListener('click', handleClick);
         };
-    }, []);
-
-    const elements = lgLinks.map((link) => {
-        const {label, url} = link;
-
-        return (
-            <li className="header_lg__item">
-                <a href={url} className="header_lg__link">{label}</a>
-            </li>
-        )
-    })
+    }, [isClick]);
 
     return (
         <div role="button" className="header_lg">
             <span>👅</span>
             <ul className="header_lg__list">
-                {elements}
+                {lgLinks.map((link, index) => (
+                    <li key={index} className="header_lg__item">
+                        <a
+                           href={link.url}
+                           className="header_lg__link"
+                        >
+                           {link.label}
+                        </a>
+                    </li>
+                ))}
             </ul>
         </div>
-    )
+    );
 };
 
 export default Lang;
