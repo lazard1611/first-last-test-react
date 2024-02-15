@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/first-last-test-react/static/css/main.edb83186.css",
+    "main.css": "/first-last-test-react/static/css/main.06a0bc73.css",
     "main.js": "/first-last-test-react/static/js/main.30c547c2.js",
     "static/media/GrtskGiga-Medium.woff": "/first-last-test-react/static/media/GrtskGiga-Medium.1ed0a3d7d85e6ec1fedb.woff",
     "static/media/GrtskGiga-Semibold.woff": "/first-last-test-react/static/media/GrtskGiga-Semibold.f81271a7e024bd1d21f2.woff",
@@ -11,11 +11,11 @@
     "static/media/GrtskGiga-Bold.woff2": "/first-last-test-react/static/media/GrtskGiga-Bold.3199e30e6f53c560a254.woff2",
     "static/media/GrtskGiga-Regular.woff2": "/first-last-test-react/static/media/GrtskGiga-Regular.6b7f9e2d323b0075c04d.woff2",
     "index.html": "/first-last-test-react/index.html",
-    "main.edb83186.css.map": "/first-last-test-react/static/css/main.edb83186.css.map",
+    "main.06a0bc73.css.map": "/first-last-test-react/static/css/main.06a0bc73.css.map",
     "main.30c547c2.js.map": "/first-last-test-react/static/js/main.30c547c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.edb83186.css",
+    "static/css/main.06a0bc73.css",
     "static/js/main.30c547c2.js"
   ]
 }
