@@ -11,7 +11,6 @@ const HomePage = ({data}) => {
 
     return (
         <div className="wrapper">
-            <div className="animate"></div>
             <div className="base">
                 <section className="section">
                     <div className="section_in">

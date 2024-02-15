@@ -1,7 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import { useNavigate, useLocation } from 'react-router-dom';
-// import {gsap} from "gsap";
 
 import './app.scss';
 import Header from '../header/header';
@@ -26,5 +24,7 @@ const App = () => {
       </Router>
   );
 }
+
+
 
 export default App;
