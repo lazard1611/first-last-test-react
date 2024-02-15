@@ -1,8 +1,8 @@
 export const data = {
     links: [
-        {label: 'where?', url: '/where'},
-        {label: 'what?', url: '/what'},
-        {label: 'who?', url: '/who'},
+        {label: 'where?', url: '/first-last-test-react/where'},
+        {label: 'what?', url: '/first-last-test-react/what'},
+        {label: 'who?', url: '/first-last-test-react/who'},
     ],
     lgLinks: [
         {label: 'UK', url: '#'},
@@ -12,5 +12,5 @@ export const data = {
     titleWhoPage: 'Who?',
     titleWhatPage: 'What?',
     titleWherePage: 'Where?',
-    logoURL: '/'
+    logoURL: '/first-last-test-react/'
 };

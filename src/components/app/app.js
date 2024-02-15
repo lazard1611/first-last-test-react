@@ -15,10 +15,10 @@ const App = () => {
         <div className="App">
           <Header data ={data}/>
           <Routes>
-            <Route exact path="/" element={<HomePage data={data}/>} />
-            <Route path="/who" element={<WhoPage data={data}/>} />
-            <Route path="/what" element={<WhatPage data={data}/>} />
-            <Route path="/where" element={<WherePage data={data}/>} />
+            <Route exact path="/first-last-test-react/" element={<HomePage data={data}/>} />
+            <Route path="/first-last-test-react/who" element={<WhoPage data={data}/>} />
+            <Route path="/first-last-test-react/what" element={<WhatPage data={data}/>} />
+            <Route path="/first-last-test-react/where" element={<WherePage data={data}/>} />
           </Routes>
         </div>
       </Router>
