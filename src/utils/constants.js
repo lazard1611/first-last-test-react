@@ -12,5 +12,6 @@ export const data = {
     titleWhoPage: 'Who?',
     titleWhatPage: 'What?',
     titleWherePage: 'Where?',
-    logoURL: '/first-last-test-react/'
+    logoURL: '/first-last-test-react/',
+    isMenuOpen: false
 };

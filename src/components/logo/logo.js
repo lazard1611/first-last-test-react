@@ -29,7 +29,7 @@ const Logo = ({url}) => {
                             style={{ fill: 'none', stroke: '#1d1f1c', strokeWidth: 1, strokeMiterlimit: 10 }}/>
                     </clipPath>
                 </defs>
-                <g clip-path="url(#clip-path)">
+                <g clipPath={"url(#clip-path)"} >
                     <rect className="path_bg" width="100%" height="100%" y="100%" fill="#000"></rect>
                 </g>
             </svg>

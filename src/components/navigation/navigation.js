@@ -3,19 +3,7 @@ import './navigation.scss';
 
 import NavLink from '../link/link';
 
-const Navigation = ({links}) => {
-    const CLASSNAMES = {
-        bodyOpenMenuState: 'body--open_menu_state',
-    };
-
-    const closeMenu = () => {
-        if (document.body.classList.contains(CLASSNAMES.bodyOpenMenuState)) {
-            setTimeout(() => {
-                document.body.classList.remove(CLASSNAMES.bodyOpenMenuState);
-            }, 300)
-        }
-    }
-
+const Navigation = ({links, handleClick}) => {
     return (
         <nav className="header_nav">
             <ul className="header_nav_list">
@@ -24,7 +12,7 @@ const Navigation = ({links}) => {
                         <NavLink
                             url={link.url}
                             label={link.label}
-                            onClick={closeMenu}
+                            onClick={handleClick}
                         />
                     </li>
                 ))}
